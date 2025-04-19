@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className="min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-white">
+      <body className="min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-white ultrawide:px-16 ultrawide:text-base">
         <ThemeProvider>
           <ScrollToTop />
           <LayoutWrapper>{children}</LayoutWrapper>

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 html {
   scroll-behavior: smooth;
@@ -10,8 +8,13 @@ html {
 
 body {
   font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  background-color: #f9fafb;
-  color: #111827;
+  background-color: #f9fafb; /* light */
+  color: #111827; /* gray-900 */
+}
+
+.dark body {
+  background-color: #111827; /* gray-900 */
+  color: #f9fafb; /* light */
 }
 
 a {
@@ -23,9 +26,21 @@ a:hover {
   color: #1e40af; /* blue-800 */
 }
 
+.dark a {
+  color: #93c5fd; /* blue-300 */
+}
+
+.dark a:hover {
+  color: #bfdbfe; /* blue-200 */
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: #1f2937; /* gray-800 */
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #f3f4f6; /* gray-100 */
 }
 
 button {
